@@ -4,7 +4,7 @@ const { inspect } = require("util");
 module.exports = {
     name: 'eval',
     aliases: ['e'],
-    description: 'Search for things on Github',
+    description: 'Eval Command',
     catagory: 'info',
     guildOnly: true,
 
