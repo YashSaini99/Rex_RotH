@@ -1,7 +1,6 @@
-const Discord = require("discord.js");
+const { MessageEmbed } = require("discord.js");
 
 module.exports = {
-
     name: "avatar",
     aliases: ["av"],
     description: "Display a user avatar",
@@ -22,17 +21,22 @@ module.exports = {
             user = message.author;
         }
 
+        const avatarEmbed = new MessageEmbed()
+        .setColor(message.member ? message.member.displayHexColor : '#f7f0f0')
+        .setTitle('Avatar');
 
+        const format = user.displayAvatarURL({ dynamic: true }).substr(user.displayAvatarURL({ dynamic: true }).length - 3);
+        
+        if (format === 'gif') {
+            avatarEmbed.setAuthor(`${user.username}#${user.discriminator} (${user.id})`);
+            avatarEmbed.setDescription(`[gif](${user.displayAvatarURL({ format: 'gif', size: 2048 })})`);
+            avatarEmbed.setImage(user.displayAvatarURL({ format: 'gif', size: 2048 }));
+        } else {
+            avatarEmbed.setAuthor(`${user.username}#${user.discriminator} (${user.id})`);
+            avatarEmbed.setDescription(`[png](${user.displayAvatarURL({ format: 'png', size: 2048 })}) | [jpeg](${user.displayAvatarURL({ format: 'jpg', size: 2048 })}) | [webp](${user.displayAvatarURL({ format: 'webp', size: 2048 })})`);
+            avatarEmbed.setImage(user.displayAvatarURL({ format: 'png', size: 2048 }));
+        }
 
-        let avatar = user.displayAvatarURL({ size: 4096, dynamic: true });
-
-        const embed = new Discord.MessageEmbed()
-
-            .setTitle(`${user.tag} avatar`)
-            .setDescription(`[Avatar URL of **${user.tag}**](${avatar})`)
-            .setColor("#f7f0f0")
-            .setImage(avatar);
-
-        return message.channel.send(embed);
+        return message.channel.send({ embed: avatarEmbed });
     }
 };
