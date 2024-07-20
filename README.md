@@ -1,7 +1,7 @@
 # RexROtH
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/YashSaini99/Rex_RotH/blob/main/LICENSE)
-[![Discord](https://img.shields.io/discord/your-server-id)](https://discord.gg/eJEBv7mRuJ)
+[![License](https://img.shields.io/badge/license-Apache-blue.svg)](https://github.com/YashSaini99/Rex_RotH/blob/main/LICENSE)
+[![Discord](https://img.shields.io/discord/675435709829742602)](https://discord.gg/eJEBv7mRuJ)
 
 **RexRotH** is an open-source Discord bot built with discord.js v12 library, featuring moderation, music, entertainment, and more.
 
@@ -65,4 +65,4 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 
 Join our Discord server for support, updates, and to meet others using **RexROtH**:
 
-[![Discord](https://img.shields.io/discord/your-server-id)](https://discord.gg/eJEBv7mRuJ)
+[![Discord](https://img.shields.io/discord/675435709829742602)](https://discord.gg/eJEBv7mRuJ)
