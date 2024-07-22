@@ -1,4 +1,4 @@
-# RexROtH
+# RexRotH
 
 [![License](https://img.shields.io/badge/license-Apache-blue.svg)](https://github.com/YashSaini99/Rex_RotH/blob/main/LICENSE)
 [![Discord](https://img.shields.io/discord/675435709829742602)](https://discord.gg/eJEBv7mRuJ)
@@ -63,6 +63,6 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 
 ## Support
 
-Join our Discord server for support, updates, and to meet others using **RexROtH**:
+Join our Discord server for support, updates, and to meet others using **RexRotH**:
 
 [![Discord](https://img.shields.io/discord/675435709829742602)](https://discord.gg/eJEBv7mRuJ)
